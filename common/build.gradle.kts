@@ -21,11 +21,17 @@ android {
     }
   }
   compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
   }
   kotlinOptions {
-    jvmTarget = "1.8"
+    jvmTarget = "17"
+  }
+  buildFeatures {
+    compose = true
+  }
+  composeOptions {
+    kotlinCompilerExtensionVersion = "1.4.3"
   }
 }
 
@@ -33,5 +39,16 @@ dependencies {
   implementation(libs.androidx.core.ktx)
   implementation(libs.androidx.appcompat)
   implementation(libs.androidx.compose.material3)
+  implementation(libs.androidx.compose.ui.tooling)
+  implementation(libs.androidx.hilt.navigation.compose)
   implementation(platform(libs.androidx.compose.bom))
+  implementation(libs.androidx.compose.material.iconsExtended)
+  implementation(project(":dtos"))
+
+  testImplementation(libs.junit4)
+  testImplementation(libs.google.truth)
+  testImplementation(libs.androidx.core.testing)
+  testImplementation(libs.kotlinx.coroutines.test)
+  testImplementation(libs.kotlin.mockito)
+  testImplementation("app.cash.turbine:turbine:1.0.0")
 }

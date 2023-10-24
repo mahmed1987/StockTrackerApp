@@ -54,6 +54,16 @@ roborazzi = "1.5.0"
 room = "2.5.2"
 secrets = "2.0.1"
 turbine = "1.0.0"
+org-jetbrains-kotlin-android = "1.8.10"
+junit = "1.1.5"
+material = "1.10.0"
+retrofitConvertors = "2.9.0"
+truth = "1.1.4"
+coreTesting = "2.2.0"
+coroutinesTest = "1.7.0"
+kotlinMockito = "3.2.0"
+
+
 
 [libraries]
 accompanist-permissions = { group = "com.google.accompanist", name = "accompanist-permissions", version.ref = "accompanist" }
@@ -128,6 +138,8 @@ okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor",
 protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version.ref = "protobuf" }
 protobuf-protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf" }
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-convertor-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitConvertors" }
+retrofit-convertor-scalar = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofitConvertors" }
 retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
 robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
 robolectric-shadows = { group = "org.robolectric", name = "shadows-framework", version.ref = "robolectric" }
@@ -136,6 +148,12 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+google-truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
+kotlin-mockito = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "kotlinMockito" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -153,17 +171,5 @@ roborazzi = { id = "io.github.takahirom.roborazzi", version.ref = "roborazzi" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
 
 # Plugins defined by this project
-nowinandroid-android-application = { id = "nowinandroid.android.application", version = "unspecified" }
-nowinandroid-android-application-compose = { id = "nowinandroid.android.application.compose", version = "unspecified" }
-nowinandroid-android-application-firebase = { id = "nowinandroid.android.application.firebase", version = "unspecified" }
-nowinandroid-android-application-flavors = { id = "nowinandroid.android.application.flavors", version = "unspecified" }
-nowinandroid-android-application-jacoco = { id = "nowinandroid.android.application.jacoco", version = "unspecified" }
-nowinandroid-android-feature = { id = "nowinandroid.android.feature", version = "unspecified" }
-nowinandroid-android-hilt = { id = "nowinandroid.android.hilt", version = "unspecified" }
-nowinandroid-android-library = { id = "nowinandroid.android.library", version = "unspecified" }
-nowinandroid-android-library-compose = { id = "nowinandroid.android.library.compose", version = "unspecified" }
-nowinandroid-android-library-jacoco = { id = "nowinandroid.android.library.jacoco", version = "unspecified" }
-nowinandroid-android-lint = { id = "nowinandroid.android.lint", version = "unspecified" }
-nowinandroid-android-room = { id = "nowinandroid.android.room", version = "unspecified" }
-nowinandroid-android-test = { id = "nowinandroid.android.test", version = "unspecified" }
-nowinandroid-jvm-library = { id = "nowinandroid.jvm.library", version = "unspecified" }
+
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }

@@ -16,3 +16,9 @@ dependencyResolutionManagement {
 rootProject.name = "StockTracker"
 include(":app")
 include(":common")
+include(":stocksListFeature")
+include(":profileFeature")
+include(":dtos")
+include(":business")
+include(":networks")
+include(":repositories")
