@@ -74,6 +74,10 @@ The only test cases in the application as of now are relating to the BaseViewMod
 
 
 
+![image](https://github.com/mahmed1987/StockTrackerApp/assets/26518062/b6fe642e-3f39-47a8-b0dc-3d619da025d1)
+![image](https://github.com/mahmed1987/StockTrackerApp/assets/26518062/8d0d43d9-9f4f-4a52-a9a7-691dc4b29c3b)
+![image](https://github.com/mahmed1987/StockTrackerApp/assets/26518062/d6998fa8-87d9-440c-bae7-f638a40bd7dd)
+![image](https://github.com/mahmed1987/StockTrackerApp/assets/26518062/9acbe87f-a990-4c71-bf77-ce3256d2b027)
 
 
 
